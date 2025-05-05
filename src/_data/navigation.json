@@ -1,0 +1,16 @@
+{
+    "items" : [
+        {
+            "text": "Home",
+            "url": "/"
+        },
+        {
+            "text": "About Our Trainers",
+            "url": "/pages/about/"
+        },
+        {
+            "text": "Rates",
+            "url": "/rates/"
+        }
+    ]
+}
