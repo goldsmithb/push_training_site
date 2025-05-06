@@ -1,16 +1,36 @@
 {
-    "items" : [
+    "items": [
         {
             "text": "Home",
             "url": "/"
+        },
+        {
+            "text": "One on One",
+            "url": "/pages/one-on-one/"
         },
         {
             "text": "About Our Trainers",
             "url": "/pages/about/"
         },
         {
+            "text": "First Visit",
+            "url": "/pages/first-visit/"
+        },
+        {
+            "text": "Partner Training",
+            "url": "/pages/partner-training/"
+        },
+        {
+            "text": "Testimonials",
+            "url": "/pages/testimonials/"
+        },
+        {
             "text": "Rates",
-            "url": "/rates/"
+            "url": "/pages/rates/"
+        },
+        {
+            "text": "Location & Hours",
+            "url": "/pages/location-and-hours/"
         }
     ]
 }
