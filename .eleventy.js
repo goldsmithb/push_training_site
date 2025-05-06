@@ -1,5 +1,5 @@
 export default async function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("images");
+    eleventyConfig.addPassthroughCopy("src/images");
     
     return {
         markdownTemplateEngine: 'njk',
