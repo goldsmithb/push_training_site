@@ -5,13 +5,30 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>{{ title }}</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7QHdd28WJJLv0gTcGzZGdF+3R56xE43nDgF"
+      crossorigin="anonymous"
+    /> -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" text="text/css" href="/global.css" />
 </head>
+
 
 <body>
 	{% include "partials/site-head.html" %}
 	<main tabindex="-1" id="main-content">{% block siteContent %}{% endblock %}</main>
 	{% include "partials/site-foot.html" %}
+
+	<!-- Bootstrap 5 JS (optional but recommended for interactivity) -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HoA64Zu6I+7p4eHOyRjqM5UYt2aAlxchzBFtS45v2f1k8Bcs0YwqIz6bGkZaa/hk"
+      crossorigin="anonymous"
+    ></script> -->
 </body>
 
 </html>
