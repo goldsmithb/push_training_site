@@ -1,26 +1,52 @@
-<style>
+<!-- <style>
 	{% include "src/css/navbar.css" %}
-</style>
+</style> -->
 
 <!-- <a class="[ skip-link ] [ button ]" href="#main-content">Skip to content</a> -->
-<header role="banner" class="site-head">
-	<div class="wrapper">
-		<div class="site-head__inner">
-			<a href="/" aria-label="{{ site.name }} - home" class="site-head__brand">
-				<img src="/images/push_logo.png" width="100" alt="Push logo img" />
+
+	<!-- <nav class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="container-fluid row">
+			<div class="col-3">
+				<a class="navbar-brand ps-3 col-3" href="/">
+					<img src="/images/push-logo.png" width="300" alt="Push logo img" />
+				</a>
+			</div>
+			<div class="col-9">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav col-9 row">
+						{% for item in navigation.items %}
+							<a class="nav-link col-3 text-end" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+						{% endfor %}
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</nav> -->
+	<header role="banner" class="site-head">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid px-5 justify-content-space-between">
+			<!-- brand and image -->
+			<a class="navbar-brand" href="#">
+					<img class="img-fluid" style="width: 100%; max-width: 200px;" src="/images/push-logo.png" alt="Push logo img" />
 			</a>
-			<nav class="[ nav ] [ site-head__nav ] [ font-sans ]" aria-label="Primary">
-				<ul class="nav__list">
+			<!-- toggler -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- collapsible nav -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav flex-wrap text-center ms-auto">
 					{% for item in navigation.items %}
-					<li>
-						<!-- TODO if the current page == item.url, make the color GREEN -->
-						<a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{
-							item.text }}
-						</a>
-					</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="{{ item.url }}"  {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+						</li>
 					{% endfor %}
 				</ul>
-			</nav>
+			</div>
 		</div>
-	</div>
+	</nav>
 </header>

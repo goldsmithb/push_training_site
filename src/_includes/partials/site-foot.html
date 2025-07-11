@@ -1,28 +1,48 @@
-<footer id="footer">
-    <style>
-        {% include "src/css/footer.css" %}
-    </style>
+<footer class="container-fluid position-relative row text-center text-white text-md-start bg-dark mx-auto" id="footer">
+	<!-- <style>
+			{% include "src/css/footer.css" %}
+	</style> -->
+	<!-- <div class="address-hours-row"> -->
+	<button type="button" id="scrollTopBtn" class=" position-absolute top-0 start-50 translate-middle-x translate-middle-y btn rounded-circle btn-sm"
+		style="width: 50px; height: 50px; background-color: #ebeced;">^<br>TOP</button>
 
-    <div class="address-hours-row">
-        <div>50 SOUTH BUCKHOUT STREET
-            SUITE 304
-            IRVINGTON, NY 10533
-        </div>
-        <div>
-            <p>HOURS</p>
-            <p>MONDAY - SUNDAY</p>
-            <p>BY APPOINTMENT FOR YOUR CONVENIENCE</p>
-        </div>
-    </div>
-    <div class="phone-email-row">
-        <div>
-            914-274-8388
-        </div>
-        <div>
-            Info@PushTrainingStudio.com
-        </div>
-    </div>
-    <div class="privacy-policy-row">
-        <a>Privacy Policy</a>
-    </div>
+	<div class="col-12 col-md-8 col-lg-6 mx-auto mb-0 mb-md-4">
+
+		<div class="row mt-4 mt-md-5">
+			<div class="col-md my-2 my-md-auto">
+				50 SOUTH BUCKHOUT STREET <br>
+				SUITE 304 <br>
+				IRVINGTON, NY 10533
+			</div>
+			<div class="col-md my-2 my-md-auto">
+				HOURS <br>
+				MONDAY - SUNDAY <br>
+				BY APPOINTMENT FOR YOUR CONVENIENCE
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md my-2 my-md-auto">
+				914-274-8388
+			</div>
+			<div class="col-md my-2 my-md-auto">
+				Info@PushTrainingStudio.com
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<a class="col my-2 my-md-auto">Privacy Policy</a>
+		</div>
+
+	</div>
 </footer>
+
+<script>
+	document.getElementById("scrollTopBtn").addEventListener("click", () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth"
+		})
+	})
+</script>
+ 
