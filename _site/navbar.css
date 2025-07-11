@@ -1,0 +1,18 @@
+nav {
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	gap: 4em;
+	justify-content: flex-end;
+}
+
+li a {
+	font-size: 1em;
+	color: grey;
+}
+
+.site-head__inner {
+	display: flex;
+}
