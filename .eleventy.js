@@ -4,6 +4,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("global.css");
+    eleventyConfig.addPassthroughCopy("robots.txt");
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addWatchTarget("src/css")
     eleventyConfig.addPassthroughCopy("src/images");
