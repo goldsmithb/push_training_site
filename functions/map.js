@@ -14,8 +14,16 @@ export async function onRequest(context) {
 
   const embedURL = `https://www.google.com/maps/embed/v1/place?key=${GM_API_KEY}&q=${q}`
 
+  const html = `
+    <iframe
+      src="${embedURL}"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>`
   // return embedURL
-  return new Response(embedURL, {
+  
+  return new Response(html, {
     status: 200,
     headers: {
       "Content-Type": "text/plain"
