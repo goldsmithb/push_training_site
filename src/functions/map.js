@@ -16,10 +16,10 @@ export async function onRequest(context) {
 
   return embedURL
 
-  return new Response(null, {
-    status: 302,
-    headers: {
-      Location: embedUrl
-    }
-  });
+  // return new Response(null, {
+  //   status: 302,
+  //   headers: {
+  //     Location: embedUrl
+  //   }
+  // });
 }
