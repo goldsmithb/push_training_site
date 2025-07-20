@@ -14,7 +14,13 @@ export async function onRequest(context) {
 
   const embedURL = `https://www.google.com/maps/embed/v1/place?key=${GM_API_KEY}&q=${q}`
 
-  return embedURL
+  // return embedURL
+  return new Response(embedURL, {
+    status: 200,
+    headers: {
+      "Content-Type": "text/plain"
+    }
+  });
 
   // return new Response(null, {
   //   status: 302,
