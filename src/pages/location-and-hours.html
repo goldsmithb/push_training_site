@@ -3,17 +3,22 @@ title: "Location & Hours"
 layout: "layouts/home.html"
 ---
 <style>
-  /* Control the height of the container via breakpoint using good, old-fashioned CSS */
   #banner {
     height: 40vh;
   }
-   @media only screen and (max-width: 768px) {
+  #map-widget {
+    height: 100%; /* Apparently, a height value is needed: https://developers.google.com/maps/documentation/javascript/examples/style-array#maps_style_array-css*/
+    width: 100%;
+  }
+  /* Control the height of the container via breakpoint using good, old-fashioned CSS */
+  @media only screen and (max-width: 768px) {
+    /* CSS for smaller screens: */
     #banner {
       height: 20vh;
     }
   }
-  
 </style>
+
 <div id="banner" class="container-fluid text-center my-4 px-5 d-flex justify-content-center align-items-center" 
     style="background-image: url(/images/photograph-main-street-irvington-ny.jpg); background-size: 100%; background-position: 50% 80%; background-repeat: no-repeat;">
   <h1 class="gray-header-txt">LOCATION & HOURS</h1>
@@ -27,7 +32,7 @@ layout: "layouts/home.html"
 
 <hr class="my-5 w-75 mx-auto"/>
 
-<div id="map-container" class="container-md text-center"></div>
+<div id="map-container" class="container-md text-center" style="height: 408px"></div>
 
 <hr class="my-5 w-75 mx-auto"/>
 

@@ -7,6 +7,7 @@ export async function onRequest(context) {
 
   const html = `
     <iframe
+      id="map-widget"
       src="${embedURL}"
       allowfullscreen
       loading="lazy"
