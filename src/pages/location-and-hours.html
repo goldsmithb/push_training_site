@@ -2,13 +2,61 @@
 title: "Location & Hours"
 layout: "layouts/home.html"
 ---
-<h1>LOCATION & HOURS</h1>
+<style>
+  /* Control the height of the container via breakpoint using good, old-fashioned CSS */
+  #banner {
+    height: 40vh;
+  }
+   @media only screen and (max-width: 768px) {
+    #banner {
+      height: 20vh;
+    }
+  }
+  
+</style>
+<div id="banner" class="container-fluid text-center my-4 px-5 d-flex justify-content-center align-items-center" 
+    style="background-image: url(/images/photograph-main-street-irvington-ny.jpg); background-size: 100%; background-position: 50% 80%; background-repeat: no-repeat;">
+  <h1 class="gray-header-txt">LOCATION & HOURS</h1>
+</div>
 
-<p id="this">
-	Open monday - sunday by appointment for your CONVENIENCE 
+<hr class="my-5 w-75 mx-auto"/>
+
+<p class="container-fluid text-center fs-3">
+	<strong>OPEN MONDAY - SUNDAY BY APPOINTMENT FOR YOUR CONVENIENCE</strong>
 </p>
 
-<div id="map-container"></div>
+<hr class="my-5 w-75 mx-auto"/>
+
+<div id="map-container" class="container-md text-center"></div>
+
+<hr class="my-5 w-75 mx-auto"/>
+
+<div class="container-md text-center fs-3">
+  <strong>
+    3RD FLOOR OF THE TRENT BUILDING 
+    <br>
+    <br>
+    50 SOUTH BUCKHOUT STREET
+    <br>
+    SUITE 304
+    <br>
+    IRVINGTON, NY 10533
+  </strong>
+</div>
+
+<div class="container-md ps-3 my-5 fs-4">
+  <strong>
+    <p>
+      <a class="link-secondary" href="tel:+19142748388">914-274-8388</a> 
+    </p>
+    <p>
+      <a class="link-secondary" href="mailto:info@pushtrainingstudio.com">info@pushtrainingstudio.com</a>
+    </p>
+  </strong>
+</div>
+
+<p>
+</p>
 
 <script>
   fetch('/map')
@@ -17,16 +65,3 @@ layout: "layouts/home.html"
       document.getElementById('map-container').innerHTML = html;
     });
 </script>
-
-
-<p>
-3rd floor of the trent building
-50 SOUTH BUCKHOUT STREET
-SUITE 304
-IRVINGTON, NY 10533
-</p>
-
-<p>
-914-274-8388
-info@pushtrainingstudio.com
-</p>
