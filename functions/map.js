@@ -5,6 +5,9 @@ export async function onRequest(context) {
 
   const embedURL = `https://www.google.com/maps/embed/v1/place?key=${GM_API_KEY}&q=${q}`
 
+  // to approximate night mode:
+  // filter: invert(90%)
+
   const html = `
     <iframe
       id="map-widget"
