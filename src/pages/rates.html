@@ -2,46 +2,55 @@
 title: "Rates"
 layout: "layouts/home.html"
 ---
-<div class="container-fluid text-center my-4 px-5 d-flex justify-content-center align-items-center" 
-    style="background-image: url(/images/silhouette-woman-stretching-at-twighlight.jpeg); background-size: 100%; background-position: 50% 55%; min-height: 30vh; background-repeat: no-repeat;">
+<style>
+  /* Control the height of the container via breakpoint using good, old-fashioned CSS */
+  #banner, #banner-lg {
+	background-size: 120%;
+  }
+  @media only screen and (max-width: 768px) {
+    /* CSS for smaller screens: */
+    #banner {
+      background-size: 250%;
+    }
+    #banner-lg {
+      background-size: 350%;
+    }
+  }
+</style>
+
+<div id="banner" class="container-fluid text-center mt-0 mb-4 px-5 d-flex justify-content-center align-items-center" 
+    style="background-image: url(/images/woman-workout-black-background.jpg); background-position: 50% 25%; min-height: 40vh; background-repeat: no-repeat;">
   <h1 class="gray-header-txt">RATES & PACKAGES</h1>
 </div>
 
-<h1>RATES AND PACKAGES</h1>
-<p>
-	Please note: We accept Cash, Checks and Zelle as payment. We do not accept Credit Card payments at this time. 
-</p>
-<div>
-<p>
-	Get Started Offer* $150 
-
-	3 personal training sessions which includes 1 fitness assessment to individualize your program
-	
-	*To be completed within 2 weeks of first visit 
-</p>
-
-<p>
-	45 min Training Packages 
-
-	6 sessions =   $618 / 103 per session 	
-	
-	12 sessions =  $1176 / 98 per session 		
-	
-	20 sessions = $1880 / 94 per session
-</p>
-
-<p>
-	55 min Training Packages
-
-	6 sessions =  $660 / 110 per session 
-
-	12 sessions =  $1260 / 105 per session                                 
-
-	20 sessions = $1980 / 99 per session 
-</p>
+<div class="container-sm">
+	<div class="p-3 mx-auto" style="max-width: 800px">
+    <p>
+      <em>Please note: We accept Cash, Checks and Zelle as payment. We do not accept Credit Card payments at this time.</em>
+    </p>
+  </div>
+	<div class="p-3 mx-auto" style="max-width: fit-content">
+		<p>
+      <strong><em>Get Started Offer* $150</em></strong>
+    </p>
+    <p>3 personal training sessions which includes 1 fitness assessment to individualize your program.</p>
+    <p class="text-end" style="font-size: .8em;">*To be completed within 2 weeks of first visit</p>
+  </div>
+	<div class="p-3 mx-auto" style="max-width: fit-content">
+    <p class="fw-bold text-decoration-underline"><em>45 min Training Packages</em></p>
+    <p>6 sessions = $618 / 103 per session</p>
+    <p>12 sessions = $1176 / 98 per session</p>
+    <p>20 sessions = $1880 / 94 per session</p>
+  </div>
+	<div class="p-3 mx-auto" style="max-width: fit-content">
+    <p class="fw-bold text-decoration-underline"><em>55 min Training Packages</em></p>
+    <p>6 sessions =  $660 / 110 per session</p>
+    <p>12 sessions =  $1260 / 105 per session</p>
+    <p>20 sessions = $1980 / 99 per session</p>
+  </div>
 </div>
 
-<div class="container-fluid text-center my-4 px-5 d-flex justify-content-center align-items-center" 
-    style="background-image: url(/images/silhouette-woman-stretching-at-twighlight.jpeg); background-size: 100%; background-position: 50% 55%; min-height: 30vh; background-repeat: no-repeat;">
+<div id="banner" class="container-fluid text-center mt-4 mb-0 px-5 d-flex justify-content-center align-items-center" 
+    style="background-image: url(/images/closeup-hand-barbell-chest-press.jpg); background-position: 50% 55%; min-height: 40vh; background-repeat: no-repeat;">
   <h1 class="gray-header-txt">RATES & PACKAGES</h1>
 </div>
