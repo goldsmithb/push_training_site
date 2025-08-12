@@ -42,7 +42,7 @@
 				<ul class="navbar-nav flex-wrap text-center ms-auto">
 					{% for item in navigation.items %}
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="{{ item.url }}"  {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+							<a href="{{ item.url }}"  {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
 						</li>
 					{% endfor %}
 				</ul>

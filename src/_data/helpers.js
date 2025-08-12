@@ -9,14 +9,10 @@
  */
 export default {
     getLinkActiveState: function getLinkActiveState(itemUrl, pageUrl) {
-        let response = '';
+        let response = 'class="nav-link"';
 
         if (itemUrl === pageUrl) {
-            response = ' aria-current="page"';
-        }
-
-        if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-            response += ' data-state="active" class="active"';
+            response = 'class="nav-link active" data-state="active" aria-current="page" test="test"';
         }
 
         return response;
