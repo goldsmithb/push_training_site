@@ -1,8 +1,14 @@
 ---
 title: "Rates"
 layout: "layouts/home.html"
+condensedText: "p-3 mx-auto condensed-text"
 ---
+<meta name="description" content="We offer a variety of training packages for 45 minute or 55 minute sessions. Take advantage of our special Getting Started offer!">
+
 <style>
+  .condensed-text {
+    max-width: 500px;
+  }
   /* Control the height of the container via breakpoint using good, old-fashioned CSS */
   #banner, #banner-lg {
 	background-size: 120%;
@@ -29,20 +35,20 @@ layout: "layouts/home.html"
       <em>Please note: We accept Cash, Checks and Zelle as payment. We do not accept Credit Card payments at this time.</em>
     </p>
   </div>
-	<div class="p-3 mx-auto" style="max-width: fit-content">
+	<div class="{{ condensedText }}">
 		<p>
       <strong><em>Get Started Offer* $150</em></strong>
     </p>
     <p>3 personal training sessions which includes 1 fitness assessment to individualize your program.</p>
     <p class="text-end" style="font-size: .8em;">*To be completed within 2 weeks of first visit</p>
   </div>
-	<div class="p-3 mx-auto" style="max-width: fit-content">
+	<div class="{{ condensedText }}">
     <p class="fw-bold text-decoration-underline"><em>45 min Training Packages</em></p>
     <p>6 sessions = $618 / 103 per session</p>
     <p>12 sessions = $1176 / 98 per session</p>
     <p>20 sessions = $1880 / 94 per session</p>
   </div>
-	<div class="p-3 mx-auto" style="max-width: fit-content">
+	<div class="{{ condensedText }}">
     <p class="fw-bold text-decoration-underline"><em>55 min Training Packages</em></p>
     <p>6 sessions =  $660 / 110 per session</p>
     <p>12 sessions =  $1260 / 105 per session</p>
@@ -52,5 +58,5 @@ layout: "layouts/home.html"
 
 <div id="banner" class="container-fluid text-center mt-4 mb-0 px-5 d-flex justify-content-center align-items-center" 
     style="background-image: url(/images/closeup-hand-barbell-chest-press.jpg); background-position: 50% 55%; min-height: 40vh; background-repeat: no-repeat;">
-  <h1 class="gray-header-txt">RATES & PACKAGES</h1>
+  <h2 class="gray-header-txt">RATES & PACKAGES</h2>
 </div>
