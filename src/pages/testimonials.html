@@ -2,10 +2,18 @@
 title: "Testimonials"
 layout: "layouts/home.html"
 ---
+<style>
+  /* CSS for smaller screens: */
+  @media only screen and (max-width: 500px) {
+    #banner {
+    font-size: 3.2em;
+    }
+  }
+</style>
 
 <div class="container-fluid text-center mb-4 mt-0 px-5 d-flex justify-content-center align-items-center" 
     style="background-image: url(/images/silhouette-woman-stretching-at-twighlight.jpeg); background-size: 100%; background-position: 50% 55%; min-height: 30vh; background-repeat: no-repeat;">
-  <h1 class="gray-header-txt">TESTIMONIALS</h1>
+  <h1 id="banner" class="gray-header-txt">TESTIMONIALS</h1>
 </div>
 
 <div class="container-md">
